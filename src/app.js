@@ -32,6 +32,7 @@ let generateExcuse = function() {
 };
 
 window.onload = function() {
+  document.querySelector("#excuse").innerHTML = generateExcuse();
   document.querySelector("#btn").addEventListener("click", () => {
     document.querySelector("#excuse").innerHTML = generateExcuse();
   });
